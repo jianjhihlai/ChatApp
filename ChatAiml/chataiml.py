@@ -11,9 +11,13 @@ mybot = aiml.Kernel()
 files = glob.glob('*.aiml')
 for learn_file in files:
     mybot.learn(learn_file)
-
+init = True
 while True:
-    message = input("Bot：你好，我可以陪你聊天\n你：")
+    if init:
+        message = input("Bot：你好，我可以陪你聊天\n你：")
+        init = False
+    else:
+        message = input("你：")
     if message == "聊天結束":
         break
     else:
