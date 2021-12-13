@@ -11,7 +11,7 @@ gensim==3.6.0
 idna==2.7
 jieba==0.39
 jmespath==0.9.3
-lxml==4.2.5
+lxml==4.6.5
 numpy==1.15.4
 python-dateutil==2.7.5
 requests==2.20.0
